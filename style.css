@@ -10,3 +10,8 @@ body::before {
     width: 100%;
 }
 }
+
+.card-img {
+    height: 200px;
+   
+}
