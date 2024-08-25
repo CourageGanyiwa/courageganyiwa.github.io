@@ -3,54 +3,118 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles/coreSuppHeader.css" />
+    <title>Your Home Of Supplements</title>
+    <link rel="stylesheet" href="./styles/sport-nutrition.css" />
   </head>
   <body>
-    <!-- Core Supplememts header -->
-
-    <div class="amazon-header">
-      <div class="amazon-header-left-section">
-        <a href="amazon.html" class="header-link">
-          <!-- <img class="amazon-logo" src="images/amazon-logo-white.png" />
-          <img
-            class="amazon-mobile-logo"
-            src="images/amazon-mobile-logo-white.png"
-          /> -->
-          <span
-            class="head-brand-logo"
-            style="
-              font-size: larger;
-              font-weight: 600;
-              color: gold;
-              font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-                'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            "
-            >Best Price Shop</span
-          >
-        </a>
+    <header>
+      <div class="nav">
+        <div>
+          <span>Core Supplements</span>
+        </div>
+        <img
+          src="./freepik_br_67a12826-5f5f-42bc-84a8-ee8d06d53ac1.png"
+          alt=""
+          class="logo"
+        />
       </div>
-
-      <div class="amazon-header-middle-section">
-        <input class="search-bar" type="text" placeholder="Search" />
-
-        <button class="search-button">
-          <img class="search-icon" src="images/icons/search-icon.png" />
-        </button>
+      <div class="header-center">
+        <input type="search" class="input-area" />
+        <button class="input-area">search</button>
       </div>
-
-      <div class="amazon-header-right-section">
-        <a class="orders-link header-link" href="orders.html">
-          <span class="returns-text">Returns</span>
-          <span class="orders-text">& Orders</span>
-        </a>
-
-        <a class="cart-link header-link" href="checkout.html">
-          <img class="cart-icon" src="images/icons/cart-icon.png" />
-          <div class="cart-quantity js-cart-quantity"></div>
-          <div class="cart-text">Cart</div>
-        </a>
+      <div class="link-container">
+        <ul class="links">
+          <li>Trends</li>
+          <li>News</li>
+          <li>About Us</li>
+        </ul>
+      </div>
+    </header>
+    <div class="main">
+      <div class="introContainer">
+        <img
+          src="./website-desktop-slider-hardcore-sept-2020.jpg"
+          alt=""
+          class="intro-pic"
+        />
+      </div>
+      <div class="fundamentals">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
+          similique voluptatibus? Libero exercitationem quia ipsam vel
+          recusandae accusantium, sapiente distinctio.
+        </p>
+        <div>
+          <img src="./images/john.jpg" alt="" class="john" />
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="ad-container">
+        <div class="ad">
+          <div class="feat-img1">
+            <img src="./images/images-67.jpeg" alt="" class="ad-pic1" />
+          </div>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel hic id
+            possimus magnam sequi iste nobis est alias molestias nihil!
+          </p>
+        </div>
+        <div class="ad">
+          <div class="feat-img2">
+            <img src="./images/images-67.jpeg" alt="" class="ad-pic2" />
+          </div>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel hic id
+            possimus magnam sequi iste nobis est alias molestias nihil!
+          </p>
+        </div>
+        <div class="ad">
+          <div class="feat-img3">
+            <img src="./images/images-67.jpeg" alt="" class="ad-pic3" />
+          </div>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel hic id
+            possimus magnam sequi iste nobis est alias molestias nihil!
+          </p>
+        </div>
+        <div class="ad">
+          <div class="feat-img4">
+            <img src="./images/images-67.jpeg" alt="" class="ad-pic4" />
+          </div>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel hic id
+            possimus magnam sequi iste nobis est alias molestias nihil!
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="fundamentals2">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, similique
+        voluptatibus? Libero exercitationem quia ipsam vel recusandae
+        accusantium, sapiente distinctio.
+      </p>
+      <div>
+        <img src="./images/john.jpg" alt="" class="john2" />
       </div>
     </div>
   </body>
+  <script>
+    const featureImage1 = document.querySelector(".ad-pic1");
+    const featureImage2 = document.querySelector(".ad-pic2");
+    const featureImage3 = document.querySelector(".ad-pic3");
+    const featureImage4 = document.querySelector(".ad-pic4");
+
+    featureImages = [
+      featureImage1,
+      featureImage2,
+      featureImage3,
+      featureImage4,
+    ];
+
+    featureImages.forEach((Image) => {
+      Image.src = "./MUSCLE-LAB-SUPER-TEST-60-CAPSULES.png";
+    });
+  </script>
 </html>
