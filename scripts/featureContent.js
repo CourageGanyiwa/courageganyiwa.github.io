@@ -1,19 +1,20 @@
   
     const images = [
       {
-        img: "images/Tesepo.jpg",
-        text:`Lorem ipsum dolor, sit amet jlhf lljgghgf hkjgrfgyul lhuhdydb blbnkjbgcu
-        ftydufhvhbljb!`
+        img: "images/bcaa.jpg",
+        text:`Recovery`
       },
       {
-        img: "images/body5.webp",
-        text:`Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel hic id
-            possimus magnam sequi iste nobis est alias molestias nihil!`
+        img: "images/serious siz banner.jpg",
+        text:`Mass`
       },
       {
-        img: "images/body5.webp",
-        text:`Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel hic id
-            possimus magnam sequi iste nobis est alias molestias nihil!`
+        img: "images/lean-girl-squat.jpg",
+        text:`Tone`
+      },
+      {
+        img: "images/115797339_3091013824325519_7487768016168430546_n.jpg",
+        text:`Strength`
       }
     ];
 
@@ -26,9 +27,10 @@
           <div class="feat-img1">
             <img src="${image.img}" alt="" class="ad-pic" />
           </div>
-          <p>
+          <h2 class='mt-2'>
           ${image.text}
-          </p>
+          </h2>
+         <button class="">Read More</button>
         </div>`;
     });
 
@@ -42,8 +44,8 @@
             <img src="{images.}" alt="" class="ad-pic" />
           </div>
           <p>
-
           </p>
+         
        `;
       });
       displayMenu = displayMenu.join("");
