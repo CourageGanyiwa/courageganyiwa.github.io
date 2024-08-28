@@ -30,7 +30,7 @@
           <h2 class='mt-2'>
           ${image.text}
           </h2>
-         <button class="">Read More</button>
+         <button class="read-more-btn">Read More</button>
         </div>`;
     });
 

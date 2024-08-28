@@ -10,88 +10,176 @@ body {
   margin: 0;
 }
 
-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 100px;
-  width: 100%;
-  background-color: rgb(201, 233, 242);
-  color: rgb(6, 4, 1);
-}
+.core-supplements-header {
+  background-color: rgb(19, 25, 33);
+  color: white;
+  padding-left: 15px;
+  padding-right: 15px;
 
-.nav {
   display: flex;
-  flex-direction: row;
-  height: 50px;
   align-items: center;
   justify-content: space-between;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 600;
-  font-size: larger;
-  margin: 0;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
 }
 
-.logo {
-  width: 35px;
-  background-color: transparent;
-  border-radius: 10px;
-  margin-left: 30px;
+.core-supplements-header-left-section {
+  width: 280px;
 }
 
-input {
-  width: 400px;
-  align-self: center;
-  justify-content: center;
+.logo-pic {
+  flex: 1;
+  width: 13%;
+  background-color: gold;
+  border-radius: 80px;
 }
 
-@media (max-width: 900px) {
-  .input {
-    width: 200px;
+.head-brand-logo {
+  margin-right: 20px;
+}
+
+@media (max-width: 800px) {
+  .core-supplements-header-left-section {
+    width: unset;
   }
-  .link-container {
-    justify-content: center;
-    margin-right: 10px;
+}
+
+.header-link {
+  display: inline-block;
+  padding: 6px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.header-link:hover {
+  border: 1px solid white;
+}
+
+.core-supplements-logo {
+  width: 200px;
+  margin-top: 5px;
+}
+
+.core-supplements-mobile-logo {
+  display: none;
+}
+
+@media (max-width: 575px) {
+  .logo-pic {
+    display: none;
   }
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0;
-    width: 100%;
-    background-color: rgb(201, 233, 242);
-    color: rgb(6, 4, 1);
+
+  .core-supplements-mobile-logo {
+    display: block;
+    height: 35px;
+    margin-top: 5px;
   }
-  .logo {
-    margin-left:15px;
-  }
-  .links {
-    gap: 15px;
-    }
 }
 
-.link-container {
-display: flex;
-text-align: center;
-
-}
-
-.links {
-display: flex;
-gap: 20px;
-font-weight: 900;
-}
-
-li {
-  list-style-type: none;
-}
-
-.header-center {
+.core-supplements-header-middle-section {
+  flex: 1;
+  max-width: 850px;
+  margin-left: 10px;
+  margin-right: 10px;
   display: flex;
+}
+
+.search-bar {
+  flex: 1;
+  width: 0;
+  font-size: 16px;
+  height: 35px;
+  padding-left: 15px;
+  border: none;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+@media (max-width: 800px) {
+  .search-bar , .search-button {
+    display: none;
+  }
+}
+
+.search-button {
+  background-color: gold;
+  border: none;
+  width: 45px;
+  height: 35px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  flex-shrink: 0;
+}
+
+.search-icon {
+  height: 22px;
+  margin-left: 2px;
+  margin-top: 3px;
+}
+
+.core-supplements-header-right-section {
+  width: 180px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: end;
+}
+
+.orders-link {
+  color: white;
+}
+
+.returns-text {
+  display: block;
+  font-size: 13px;
+}
+
+.orders-text {
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.cart-link {
+  color: white;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.cart-icon {
+  width: 50px;
+}
+
+.cart-text {
+  margin-top: 12px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.cart-quantity {
+  color: rgb(159, 202, 240);
+  font-size: 16px;
+  font-weight: 700;
+
+  position: absolute;
+  top: 4px;
+  left: 22px;
+  
+  width: 26px;
+  text-align: center;
 }
 
 .introContainer {
   background-color: rgba(0, 0, 0, 0.268);
+  margin-top: 60px;
 }
 
 .intro-pic {
@@ -162,7 +250,7 @@ justify-content: center;
   font-size: larger;
   text-align: center;
 }
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   .fundamentals2 {
     display: block;
     align-items: start;
@@ -181,8 +269,23 @@ justify-content: center;
   
 }
 
+  .read-more-btn {
+    background-color: transparent;
+    color: rgb(4, 10, 13);
+    font-weight: 600;
+    border-radius: 10px;
+  }
+
+   .footer-txt {
+    padding-top: 40px;
+    font-style: italic;
+  }
+
 .footer {
+  display: flex;
+  justify-content: center;
   background-color: rgba(5, 5, 13, 0.798);
   width: 100%;
   height: 100px;
+  color: antiquewhite;
 }
