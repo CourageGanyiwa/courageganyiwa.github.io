@@ -46,6 +46,10 @@ body {
   .core-supplements-header-left-section {
     width: unset;
   }
+
+  .core-supplements-header {
+    
+  }
 }
 
 .header-link {
@@ -83,6 +87,10 @@ body {
     display: block;
     height: 35px;
     margin-top: 5px;
+  }
+
+  .read-more-btn {
+    display: none;
   }
 }
 
@@ -255,6 +263,10 @@ justify-content: center;
   text-align: center;
 }
 @media (max-width: 850px) {
+  .intro-header {
+    font-size: large;
+  }
+
   .fundamentals2 {
     display: block;
     align-items: start;
@@ -279,6 +291,7 @@ justify-content: center;
   .ad {
     width: 80%;
     height: 80%;
+    margin: 30px;
   }
 
   .deep-txt {
