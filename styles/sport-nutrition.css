@@ -72,7 +72,11 @@ body {
 
 @media (max-width: 575px) {
   .logo-pic {
-    display: none;
+    width: 40px;
+  }
+
+  .head-brand-logo {
+    
   }
 
   .core-supplements-mobile-logo {
@@ -260,11 +264,25 @@ justify-content: center;
   .ad-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-  }
+     }
+
   .john , .john2 {
     width: 90%;
-    height: 280px;
+    height: 90%;
     border-radius: 10px;
+  }
+
+  .ad-pic {
+    width: 100%;
+    height: 80%;
+  }
+  .ad {
+    width: 80%;
+    height: 80%;
+  }
+
+  .deep-txt {
+    font-size: small;
   }
   
 }
