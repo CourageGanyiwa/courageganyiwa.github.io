@@ -11,7 +11,7 @@ body {
 }
 
 .core-supplements-header {
-  background-color: rgb(19, 25, 33);
+  background-color: rgba(4, 63, 139, 0.752);
   color: white;
   padding-left: 15px;
   padding-right: 15px;
@@ -28,18 +28,18 @@ body {
 }
 
 .core-supplements-header-left-section {
+  display: flex;
   width: 280px;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo-pic {
-  flex: 1;
-  width: 13%;
-  background-color: gold;
-  border-radius: 80px;
-}
-
-.head-brand-logo {
+  flex-shrink: 0;
+  width: 12%;
+  background-color: transparent;
   margin-right: 20px;
+  margin-left: 50px;
 }
 
 @media (max-width: 800px) {
@@ -48,7 +48,11 @@ body {
   }
 
   .core-supplements-header {
-    
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    height: 60px;
+
   }
 }
 
@@ -59,6 +63,7 @@ body {
   cursor: pointer;
   text-decoration: none;
   border: 1px solid rgba(0, 0, 0, 0);
+  
 }
 
 .header-link:hover {
@@ -68,10 +73,6 @@ body {
 .core-supplements-logo {
   width: 200px;
   margin-top: 5px;
-}
-
-.core-supplements-mobile-logo {
-  display: none;
 }
 
 @media (max-width: 575px) {
@@ -119,10 +120,18 @@ body {
   .search-bar , .search-button {
     display: none;
   }
+  .core-supplements-header-right-section {
+  justify-content: center;
+  width: auto;
+  flex-shrink: 1;
+  display: flex;
+  gap: 10px;
+  padding-right: 60px;
+}
 }
 
 .search-button {
-  background-color: gold;
+  background-color: red;
   border: none;
   width: 45px;
   height: 35px;
@@ -138,14 +147,16 @@ body {
 }
 
 .core-supplements-header-right-section {
-  width: 180px;
+  justify-content: center;
+  width: 280px;
   flex-shrink: 0;
   display: flex;
-  justify-content: end;
+  gap: 20px;
 }
 
 .orders-link {
   color: white;
+
 }
 
 .returns-text {
@@ -174,12 +185,13 @@ body {
   margin-top: 12px;
   font-size: 15px;
   font-weight: 700;
+  
 }
 
 .cart-quantity {
   color: rgb(159, 202, 240);
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 900;
 
   position: absolute;
   top: 4px;
@@ -187,6 +199,8 @@ body {
   
   width: 26px;
   text-align: center;
+
+  color: red;
 }
 
 .introContainer {
