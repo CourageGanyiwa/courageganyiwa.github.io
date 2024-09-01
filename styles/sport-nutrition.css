@@ -133,8 +133,11 @@ body {
   justify-content: center;
   width: auto;
   flex-shrink: 1;
-  gap: 5px;
-  padding-right: 50px
+}}
+
+@media (max-width: 600px) {
+  .core-supplements-header-right-section {
+    padding-right: 80px;
 }
 }
 .orders-link :hover {
