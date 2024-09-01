@@ -51,3 +51,11 @@
       displayMenu = displayMenu.join("");
       sectionCenter.innerHTML = displayMenu;
     }
+
+    const date = new Date();
+    const fullYear = date.getFullYear();
+
+    document.querySelector('.fullYear').innerHTML = fullYear;
+    
+
+    
