@@ -133,7 +133,11 @@ body {
   justify-content: center;
   width: auto;
   flex-shrink: 1;
-}}
+}
+.cart-icon {
+  width: 50px;
+}
+}
 
 @media (max-width: 600px) {
   .core-supplements-header-right-section {
@@ -176,6 +180,7 @@ body {
 .returns-text {
   display: block;
   font-size: 13px;
+
 }
 
 .orders-text {
