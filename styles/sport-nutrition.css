@@ -44,6 +44,8 @@ body {
 
 @media (max-width: 800px) {
   .core-supplements-header-left-section {
+    display: flex;
+    flex-direction: row;
     width: unset;
   }
 
@@ -77,11 +79,16 @@ body {
 
 @media (max-width: 575px) {
   .logo-pic {
-    width: 40px;
+    width: 50px;
+    margin: 0;
+    padding: 5px;
   }
 
-  .head-brand-logo {
-    
+  .spcl-header-txt {
+    display: flex;
+    font-size: 15px;
+    width: 150px;
+    font-weight: 600;
   }
 
   .core-supplements-mobile-logo {
@@ -126,11 +133,11 @@ body {
   width: auto;
   flex-shrink: 1;
   gap: 5px;
-  padding-right: 75px;
+  padding-right: 20px;
 }
-  .orders-link :hover {
-    color: antiquewhite;
-  }
+}
+.orders-link :hover {
+  color: antiquewhite;
 }
 
 .search-button {
