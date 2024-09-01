@@ -129,11 +129,13 @@ body {
   }
   .core-supplements-header-right-section {
   display: flex;
+  position: absolute;
+  left: 200px;
+  align-items: center;
   justify-content: center;
   width: auto;
   flex-shrink: 1;
   gap: 5px;
-  padding-right: 20px;
 }
 }
 .orders-link :hover {
