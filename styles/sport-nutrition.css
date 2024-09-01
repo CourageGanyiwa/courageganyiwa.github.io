@@ -89,7 +89,11 @@ body {
     width: 150px;
     font-weight: 600;
   }
+  
+  .header-link {
 
+    width: 100;
+  }
   .read-more-btn {
     display: none;
   }
@@ -124,7 +128,7 @@ body {
   .core-supplements-header-right-section {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   width: 100%;
   flex-shrink: 1;
 }
