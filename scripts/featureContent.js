@@ -20,17 +20,22 @@
 
     const featureImages = document.querySelectorAll(".ad-pic");
     const container = document.querySelector(".ad-container");
+    const date = new Date();
+    const fullYear = date.getFullYear();
+    
+
+    document.querySelector('.fullYear').innerHTML = fullYear;
 
     let display = images.map((image) => {
       return ` 
       <div class="ad">
           <div class="feat-img1">
             <img src="${image.img}" alt="" class="ad-pic" />
+              <h2 class='mt-2'>
+              ${image.text}
+              </h2>
+            <button class="read-more-btn read">Read More</button>
           </div>
-          <h2 class='mt-2'>
-          ${image.text}
-          </h2>
-         <button class="read-more-btn">Read More</button>
         </div>`;
     });
 
@@ -52,10 +57,23 @@
       sectionCenter.innerHTML = displayMenu;
     }
 
-    const date = new Date();
-    const fullYear = date.getFullYear();
+    const readMoreBtn = document.querySelector('.read');
 
-    document.querySelector('.fullYear').innerHTML = fullYear;
+    readMoreBtn.addEventListener('click', (e)=> {
+      console.log(e.target);
+      
+    })
+    
+
+
+  
+    
+
+
+
+
+
+
     
 
     
